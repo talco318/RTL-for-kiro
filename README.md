@@ -5,13 +5,36 @@ A simple plugin to add RTL (Right-to-Left) support for Hebrew text in Kiro chat
 
 ## ⚡ Quick Installation
 
-1. **Close Kiro completely**
-2. **Run the installation script:**
+### Step 1: Download and Extract
+1. **Download the ZIP file** `install-rtl-kiro-1.0.zip`
+2. **Extract the ZIP file** to a folder (right-click → Extract All)
+3. **Remember the folder location** (e.g., `C:\Users\YourName\Downloads\RTL-KIRO`)
+
+### Step 2: Open PowerShell
+1. **Press Windows key** and type "PowerShell"
+2. **Choose "Windows PowerShell"** (NOT PowerShell x86 or ISE)
+3. **Click to open it**
+
+### Step 3: Navigate to the Folder
+1. **Type `cd` followed by a space**
+2. **Type the path to your extracted folder**
    ```powershell
-   .\install-rtl-kiro.ps1
+   cd "C:\Users\YourName\Downloads\RTL-KIRO"
    ```
-3. **Restart Kiro**
-4. **Type in Hebrew in the chat - text will be automatically right-aligned!**
+3. **Press Enter**
+
+### Step 4: Install
+1. **Close Kiro completely** (make sure it's not running)
+2. **Copy and paste this command:**
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File install-rtl-kiro.ps1
+   ```
+3. **Press Enter**
+4. **Wait for "Installation completed successfully!" message**
+
+### Step 5: Test
+1. **Open Kiro**
+2. **Type in Hebrew in the chat - text will be automatically right-aligned!**
 
 ## ✨ What It Does
 
@@ -27,9 +50,12 @@ The plugin adds smart CSS rules that automatically detect text direction:
 
 To remove the plugin:
 
-```powershell
-.\uninstall-rtl-kiro.ps1
-```
+1. **Open PowerShell** (same as Step 2 above)
+2. **Navigate to the folder** (same as Step 3 above)
+3. **Run the uninstall command:**
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File uninstall-rtl-kiro.ps1
+   ```
 
 ## 📁 Files
 
@@ -44,33 +70,58 @@ To remove the plugin:
 3. Restart Kiro completely
 
 ### "File not found" error:
+- Make sure you extracted the ZIP file first
+- Make sure you're in the correct folder (use `cd` command)
 - Make sure Kiro is installed in the standard location
 - Run the script as the user who installed Kiro
+
+### "Execution Policy" error:
+- Make sure you're using the full command with `-ExecutionPolicy Bypass`
+- Run PowerShell as Administrator if needed
 
 ---
 
 **Created by Tal Cohen**  
 **Version 1.0**
 
+---
 
-
-
-
-
-
-# יישור לימין בKIRO (עברית)
+# יישור לימין ב-KIRO (עברית)
 
 תוסף פשוט להוספת תמיכה ב-RTL (כיוון מימין לשמאל) לטקסט עברית בצ'אט של Kiro
 
 ## ⚡ התקנה מהירה
 
-1. **סגור את Kiro לחלוטין**
-2. **הרץ את סקריפט ההתקנה:**
+### שלב 1: הורדה וחילוץ
+1. **הורד את קובץ ה-ZIP** `install-rtl-kiro-1.0.zip`
+2. **חלץ את קובץ ה-ZIP** לתיקייה (לחיצה ימנית → חלץ הכל)
+3. **זכור את מיקום התיקייה** (למשל: `C:\Users\השם שלך\Downloads\RTL-KIRO`)
+
+### שלב 2: פתיחת PowerShell
+1. **לחץ על מקש Windows** וכתוב "PowerShell"
+2. **בחר ב-"Windows PowerShell"** (לא PowerShell x86 או ISE)
+3. **לחץ לפתיחה**
+
+### שלב 3: ניווט לתיקייה
+1. **כתוב `cd` ואחריו רווח**
+2. **כתוב את הנתיב לתיקייה שחילצת, לדוגמה:
    ```powershell
-   .\install-rtl-kiro.ps1
+   cd "C:\Users\השם שלך\Downloads\RTL-KIRO"
    ```
-3. **פתח את Kiro מחדש**
-4. **כתוב בעברית בצ'אט - הטקסט יהיה מיושר לימין אוטומטית!**
+3. **לחץ Enter**
+
+### שלב 4: התקנה
+1. **סגור את Kiro לחלוטין** (ודא שהוא לא רץ)
+2. **העתק והדבק את הפקודה הזו:**
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File install-rtl-kiro.ps1
+   ```
+3. **לחץ Enter**
+4. **חכה להודעה "Installation completed successfully!"**
+
+### שלב 5: בדיקה
+1. **פתח את Kiro**
+2. **כתוב בעברית בצ'אט - הטקסט יהיה מיושר לימין אוטומטית!**
 
 ## ✨ מה זה עושה
 
@@ -86,9 +137,12 @@ To remove the plugin:
 
 להסרת התוסף:
 
-```powershell
-.\uninstall-rtl-kiro.ps1
-```
+1. **פתח PowerShell** (כמו בשלב 2 למעלה)
+2. **נווט לתיקייה** (כמו בשלב 3 למעלה)
+3. **הרץ את פקודת ההסרה:**
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File uninstall-rtl-kiro.ps1
+   ```
 
 ## 📁 קבצים
 
@@ -103,8 +157,14 @@ To remove the plugin:
 3. אתחל את Kiro לחלוטין
 
 ### שגיאת "קובץ לא נמצא":
+- ודא שחילצת את קובץ ה-ZIP קודם
+- ודא שאתה בתיקייה הנכונה (השתמש בפקודת `cd`)
 - ודא ש-Kiro מותקן במיקום הסטנדרטי
 - הרץ את הסקריפט כמשתמש שהתקין את Kiro
+
+### שגיאת "Execution Policy":
+- ודא שאתה משתמש בפקודה המלאה עם `-ExecutionPolicy Bypass`
+- הרץ את PowerShell כמנהל אם נדרש
 
 ---
 
