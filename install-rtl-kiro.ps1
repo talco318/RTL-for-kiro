@@ -29,7 +29,7 @@ try {
     # 4. RTL CSS Block
 $rtlCSS = @'
 
-/* Kiro RTL Hebrew Support - V5 (System Stability Edition) */
+/* Kiro RTL Hebrew Support - V6 (Fixed Hebrew in Code Blocks) */
 
 /* 1. Apply RTL to free text content only - using focused selectors */
 .kiro-chat-message-body > div:not([class*="agent-"]), 
@@ -49,7 +49,7 @@ $rtlCSS = @'
 pre code {
   direction: ltr !important;
   text-align: left !important;
-  unicode-bidi: bidi-override !important;
+  unicode-bidi: plaintext !important;
   min-height: unset !important; /* Remove 40px that distorts display */
   display: block;
 }
@@ -78,7 +78,7 @@ pre code {
   display: inline-block !important;
   min-height: unset !important;
   padding: 0 4px !important;
-  unicode-bidi: embed !important;
+  unicode-bidi: plaintext !important;
 }
 '@
 
