@@ -3,6 +3,9 @@
 
 A simple plugin to add RTL (Right-to-Left) support for Hebrew text in Kiro chat
 
+<img width="732" height="443" alt="image" src="https://github.com/user-attachments/assets/b0194663-0eef-4df2-8fff-5d4ac70f739f" />
+
+
 ## ⚡ Quick Installation
 
 ### Step 1: Download and Extract
